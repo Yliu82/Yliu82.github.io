@@ -1,0 +1,235 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .hero {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    filter: brightness(60%);
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+  }
+  
+  .hero-text p {
+    font-size: 1.25rem;
+    margin-top: 0.5rem;
+  }
+  
+  .section-block {
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+  
+  .section-block img {
+    max-width: 100%;
+    margin-top: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  .section-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+  }
+  
+  .section-row .section-block {
+    flex: 1 1 450px;
+    max-width: 500px;
+    text-align: center;
+  }
+  
+  .text-block {
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    color: #111;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1rem;
+  }
+  
+  .gallery img {
+    width: calc(50% - 1rem);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  @media (max-width: 768px) {
+    .section-row {
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+  
+    .gallery img {
+      width: 100%;
+    }
+  }
+  /* Force poster and render images to have same height */
+.section-row img {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Back to Home floating button */
+  .back-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #333;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .back-button:hover {
+    background-color: #555;
+  }
+  /* --- Typography & layout improvements --- */
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    line-height: 1.6;
+  }
+  
+  .text-block {
+    font-weight: 600;
+    font-size: 1.75rem;
+    margin-bottom: 0.5rem;
+    color: #69ccc3;
+    text-align: center;
+  }  
+  
+  .subtext-block {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #cccccc;
+    text-align: center;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .section-block {
+    background-color: #2a2a2a;
+    padding: 2rem 1rem;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    margin-bottom: 3rem;
+  }
+  
+  .section-block img,
+  .section-row img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.6);
+  }
+  
+  .section-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto 3rem auto;
+  }
+  
+  .section-row .section-block {
+    flex: 1 1 calc(50% - 1rem);
+  }
+  
+  /* Final image gallery (4 large images) */
+  .gallery img {
+    width: calc(50% - 1rem);
+    height: auto;
+  }
+  
+  .hero-text h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+  
+  .hero-text p {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-top: 1rem;
+  }
+  /* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .lightbox-content {
+    display: block;
+    margin: 5% auto;
+    max-width: 90%;
+    max-height: 80%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  .close {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close:hover {
+    color: #ccc;
+  }
+  
+  
+  /* Back button remains unchanged */
+  
+  

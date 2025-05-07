@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Other Works | Yinuo Liu</title>
+  <link rel="stylesheet" href="css/otherworks.css">
+</head>
+
+<body>
+  <!-- Hero Section -->
+  <section class="hero">
+    <img src="img/otherworks_cover.jpg" alt="Other Works Cover" class="hero-image">
+    <div class="hero-text">
+      <h1>Other Works-12x12x12 seat</h1>
+      <p>what makes a seat? Design a structure to support a person in a way that is interesting and relevant given its location. Consider your seat’s design, look and relationship to the site. </p>
+    </div>
+  </section>
+
+  <!-- Section: Thinking Process -->
+<div class="section-block">
+    <div class="text-block">Thinking Process: Ideation</div>
+    <div class="subtext-block">Exploring early conceptual directions through quick sketches and structural play.</div>
+    <img src="img/thinkingprocess.jpg" alt="Thinking Process">
+  </div>
+  
+
+  <!-- Modular + Assembly -->
+  <!-- Section: Modular & Assembly -->
+<div class="section-row">
+    <div class="section-block">
+      <div class="text-block">Modular Possibilities</div>
+      <div class="subtext-block">A flexible configuration system showcasing how the modular seating adapts to diverse environments, offering dynamic arrangements for personal, communal, and transitional spaces.</div>
+      <img src="img/modular.jpg" alt="Modular Layout">
+    </div>
+    <div class="section-block">
+      <div class="text-block">Assembly Instructions</div>
+      <div class="subtext-block"> A step-by-step visual guide designed to ensure intuitive, efficient, and tool-assisted assembly for users of all skill levels, promoting clarity and confidence throughout the process.</div>
+      <img src="img/assembly.jpg" alt="Assembly">
+    </div>
+  </div>
+  
+
+  <!-- Force + Material -->
+  <!-- Section: Force & Material -->
+<div class="section-row">
+    <div class="section-block">
+      <div class="text-block">Force Analysis</div>
+      <div class="subtext-block">Analyzing load distribution and stability through basic engineering evaluation.</div>
+      <img src="img/forceanalysis.jpg" alt="Force Analysis">
+    </div>
+    <div class="section-block">
+      <div class="text-block">Material Selection</div>
+      <div class="subtext-block">Comparing potential materials for comfort, weight, and environmental impact.</div>
+      <img src="img/material.jpg" alt="Material">
+    </div>
+  </div>
+  
+
+  <!-- Poster -->
+  <!-- Section: Poster + Rendering -->
+<div class="section-row">
+    <div class="section-block">
+      <div class="text-block">Project Poster</div>
+      <div class="subtext-block">Concise one-page summary highlighting the problem, process, and solution.</div>
+      <img src="img/poster.jpg" alt="Poster">
+    </div>
+    <div class="section-block">
+      <div class="text-block">Final Rendering</div>
+      <div class="subtext-block">Photorealistic renderings simulating the design in real-life contexts.</div>
+      <div class="gallery">
+        <img src="img/render_1.jpg" alt="Render 1">
+        <img src="img/render_2.jpg" alt="Render 2">
+        <img src="img/render_3.jpg" alt="Render 3">
+        <img src="img/render_4.jpg" alt="Render 4">
+      </div>
+    </div>
+  </div>
+    
+  <!-- Floating Back Button -->
+<a href="index.html" class="back-button" title="Back to Home">⟵ Back</a>
+<!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+  <!-- Lightbox Modal -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+  </div>
+  
+  <!-- Lightbox Script -->
+  <script>
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    const closeBtn = document.querySelector('.close');
+  
+    document.querySelectorAll('img').forEach(img => {
+      img.addEventListener('click', () => {
+        lightbox.style.display = 'block';
+        lightboxImg.src = img.src;
+      });
+    });
+  
+    closeBtn.onclick = function () {
+      lightbox.style.display = 'none';
+    };
+  
+    lightbox.onclick = function (e) {
+      if (e.target === lightbox) {
+        lightbox.style.display = 'none';
+      }
+    };
+  </script>
+  
+</body>
+
+</html>
